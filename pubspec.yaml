@@ -32,23 +32,34 @@ dependencies:
     sdk: flutter
   auto_route: ^7.8.4
   flutter_bloc: ^8.1.4
+  hydrated_bloc: ^9.1.4
+  flutter_bloc_patterns: 
+    git: 
+      url: https://github.com/agostinofiscale/flutter-bloc-patterns/
+      ref: d045b4f40a48826f7ddd12f3616b90cc08bc680c
+  flutter_form_bloc: ^0.31.0
   get_it: ^7.6.7
   easy_localization: 
   equatable: ^2.0.0
+  biometric_storage: ^5.0.1
+  path_provider: ^2.1.0
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+  uuid: ^3.0.7
   medusa_js_dart:
     git:
       url: https://github.com/agostinofiscale/medusa-js-dart
-      ref: develop
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+      ref: ad618b92df70ade218f5b729ca946d5f8ba27034
   cupertino_icons: ^1.0.2
+  flex_color_scheme: ^7.3.1
+  extended_image: ^8.2.0
+  flutter_secure_storage: ^9.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  
   auto_route_generator:          
   build_runner:   
 

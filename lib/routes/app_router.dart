@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
 
 import 'package:medusa_js_admin/features/sources/pages/SourcesPage.dart';
 import 'package:medusa_js_admin/features/authentication/pages/AuthenticationPage.dart';
@@ -16,16 +17,16 @@ import 'package:medusa_js_admin/features/gift-cards/pages/GiftCardsPage.dart';
 import 'package:medusa_js_admin/features/gift-cards/detail/pages/GiftCardDetailPage.dart';
 import 'package:medusa_js_admin/features/inventory/pages/InventoryPage.dart';
 import 'package:medusa_js_admin/features/oauth/pages/OauthPage.dart';
-import 'package:medusa_js_admin/features/orders/pages/OrdersPage.dart';
-import 'package:medusa_js_admin/features/orders/detail/pages/OrderDetailPage.dart';
+import 'package:medusa_js_admin/features/orders/pages/orders_page.dart';
+import 'package:medusa_js_admin/features/orders/order-detail/pages/order_detail_page.dart';
 import 'package:medusa_js_admin/features/pricing/pages/PricingPage.dart';
 import 'package:medusa_js_admin/features/pricing/detail/pages/PricingDetailPage.dart';
 import 'package:medusa_js_admin/features/product-categories/pages/ProductCategoriesPage.dart';
-import 'package:medusa_js_admin/features/products/pages/ProductsPage.dart';
-import 'package:medusa_js_admin/features/products/detail/pages/ProductDetailPage.dart';
+import 'package:medusa_js_admin/features/products/pages/products_page.dart';
+import 'package:medusa_js_admin/features/products/product-detail/pages/product_detail_page.dart';
 import 'package:medusa_js_admin/features/publishable-api-keys/pages/PublishableApiKeysPage.dart';
 import 'package:medusa_js_admin/features/sales-channels/pages/SalesChannelsPage.dart';
-import 'package:medusa_js_admin/features/settings/pages/SettingsPage.dart';
+import 'package:medusa_js_admin/features/settings/pages/settings_page.dart';
 import 'package:medusa_js_admin/features/settings/currencies/pages/CurrenciesPage.dart';
 import 'package:medusa_js_admin/features/settings/personal-information/pages/PersonalInformationPage.dart';
 import 'package:medusa_js_admin/features/settings/regions/pages/RegionsPage.dart';

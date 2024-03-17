@@ -21,17 +21,17 @@ class GiftCardDetailPage extends StatelessWidget {
                   trailing: IconButton(
                     icon: const Icon(Icons.copy),
                     onPressed: () => showModalBottomSheet(
-                          shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.vertical(
-                              top: Radius.circular(20),
-                            ),
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.vertical(
+                            top: Radius.circular(20),
                           ),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          context: context,
-                          builder: (context) {
-                            return const GiftCardMoreActionsBottomSheet();
-                          }),
-                    ),
+                        ),
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        context: context,
+                        builder: (context) {
+                          return const GiftCardMoreActionsBottomSheet();
+                        }),
+                  ),
                 ),
                 ListTile(
                   title: const Text('Gift Card 1'),

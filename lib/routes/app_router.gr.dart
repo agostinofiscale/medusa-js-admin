@@ -106,9 +106,13 @@ abstract class _$AppRouter extends RootStackRouter {
       );
     },
     OrderDetailRoute.name: (routeData) {
+      final args = routeData.argsAs<OrderDetailRouteArgs>();
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const OrderDetailPage(),
+        child: OrderDetailPage(
+          key: args.key,
+          orderId: args.orderId,
+        ),
       );
     },
     OrdersRoute.name: (routeData) {
@@ -142,9 +146,13 @@ abstract class _$AppRouter extends RootStackRouter {
       );
     },
     ProductDetailRoute.name: (routeData) {
+      final args = routeData.argsAs<ProductDetailRouteArgs>();
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const ProductDetailPage(),
+        child: ProductDetailPage(
+          key: args.key,
+          productId: args.productId,
+        ),
       );
     },
     ProductsRoute.name: (routeData) {
@@ -422,16 +430,40 @@ class OauthRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [OrderDetailPage]
-class OrderDetailRoute extends PageRouteInfo<void> {
-  const OrderDetailRoute({List<PageRouteInfo>? children})
-      : super(
+class OrderDetailRoute extends PageRouteInfo<OrderDetailRouteArgs> {
+  OrderDetailRoute({
+    Key? key,
+    required String orderId,
+    List<PageRouteInfo>? children,
+  }) : super(
           OrderDetailRoute.name,
+          args: OrderDetailRouteArgs(
+            key: key,
+            orderId: orderId,
+          ),
           initialChildren: children,
         );
 
   static const String name = 'OrderDetailRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static const PageInfo<OrderDetailRouteArgs> page =
+      PageInfo<OrderDetailRouteArgs>(name);
+}
+
+class OrderDetailRouteArgs {
+  const OrderDetailRouteArgs({
+    this.key,
+    required this.orderId,
+  });
+
+  final Key? key;
+
+  final String orderId;
+
+  @override
+  String toString() {
+    return 'OrderDetailRouteArgs{key: $key, orderId: $orderId}';
+  }
 }
 
 /// generated route for
@@ -506,16 +538,40 @@ class ProductCategoriesRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [ProductDetailPage]
-class ProductDetailRoute extends PageRouteInfo<void> {
-  const ProductDetailRoute({List<PageRouteInfo>? children})
-      : super(
+class ProductDetailRoute extends PageRouteInfo<ProductDetailRouteArgs> {
+  ProductDetailRoute({
+    Key? key,
+    required String productId,
+    List<PageRouteInfo>? children,
+  }) : super(
           ProductDetailRoute.name,
+          args: ProductDetailRouteArgs(
+            key: key,
+            productId: productId,
+          ),
           initialChildren: children,
         );
 
   static const String name = 'ProductDetailRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static const PageInfo<ProductDetailRouteArgs> page =
+      PageInfo<ProductDetailRouteArgs>(name);
+}
+
+class ProductDetailRouteArgs {
+  const ProductDetailRouteArgs({
+    this.key,
+    required this.productId,
+  });
+
+  final Key? key;
+
+  final String productId;
+
+  @override
+  String toString() {
+    return 'ProductDetailRouteArgs{key: $key, productId: $productId}';
+  }
 }
 
 /// generated route for
